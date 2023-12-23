@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zaverecnaprace.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Album roku hlasování</title>
+</head>
+<body>
+    <div class="video">
+        <video autoplay loop muted class="aotypozadivideo">
+            <source src="aoty_pozadif.mp4" type="video/mp4">
+        </video>
+    </div>
+<h2 class="novevydaninadpis">Album roku</h2>
+    <form id="voting-form">
+        <div class="album-container">
+            <div class="album">
+                <input type="radio" name="album" value="A Great Chaos - Ken Carson">
+                <img src="ken_carson_agc_cover.png" alt="A Great Chaos - Ken Carson">
+                <p>A Great Chaos - Ken Carson</p>
+            </div>
+
+            <div class="album">
+                <input type="radio" name="album" value="If Looks Could Kill - Destroy Lonely">
+                <img src="destroy_lonely_ilck_cover.png" alt="If Looks Could Kill - Destroy Lonely">
+                <p>If Looks Could Kill - Destroy Lonely</p>
+            </div>
+
+            <div class="album">
+                <input type="radio" name="album" value="What We Didn't Have - Summrs">
+                <img src="summrs_wwdh_cover.jpg" alt="What We Didn't Have - Summrs">
+                <p>What We Didn't Have - Summrs</p>
+            </div>
+        </div>
+
+        <div class="album-container">
+            <div class="album">
+                <input type="radio" name="album" value="$MD - Lucki">
+                <img src="lucki_smd_cover.jpg" alt="$MD - Lucki">
+                <p>$MD - Lucki</p>
+            </div>
+
+            <div class="album">
+                <input type="radio" name="album" value="Golden Child 3! - Autumn!">
+                <img src="autumn_gc3_cover.png" alt="Golden Child 3! - Autumn!">
+                <p>Golden Child 3! - Autumn!</p>
+            </div>
+
+            <div class="album">
+                <input type="radio" name="album" value="TEC - Lil Tecca">
+                <img src="lil_tecca_tec_cover.png" alt="TEC - Lil Tecca">
+                <p>TEC - Lil Tecca</p>
+            </div>
+        </div>
+
+        <button id="vote-button" type="button" onclick="submitVote()">Hlasovat</button>
+    </form>
+    <footer><a href="index.html" class="uvoddole" target="_self">MUZIK</a></footer>
+
+    <script>
+        // Váš JavaScript kód pro typewriter animaci
+        function submitVote() {
+            var selectedAlbum = document.querySelector('input[name="album"]:checked');
+
+            if (selectedAlbum) {
+                var albumName = selectedAlbum.value;
+                alert('Hlasoval(a) jste pro album: ' + albumName);
+            } else {
+                alert('Prosím, vyberte album pro hlasování.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "nightmachine";
+    src: url(NightMachine.ttf);
+}
+@font-face {
+    font-family: "coolvetica";
+    src: url(MAROLA__.TTF);
+}
+
+body{color: white;
+    background-color: black;
+}
+
+.nadpis{font-family: "nightmachine";
+    font-size: 250px;
+    color: crimson;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.novevydaninadpis{font-family: "nightmachine";
+    font-size: 125px;
+    color: crimson;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+a:hover { 
+    text-decoration: none;
+    border-width: 4px;
+    transform: scale(1.1);   
+} 
+
+a:link { 
+    text-decoration: none; 
+  }
+
+a:visited { 
+    text-decoration: none; 
+  }
+
+a:active { 
+    text-decoration: none; 
+  }
+
+.aoty{  text-align: center;
+    width: 200px;
+    height: 150px;
+    border: medium solid rgb(220, 20, 60);
+    position: absolute;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: xx-large;
+    left: 460px;
+    top: 350px;
+    padding-top: 32px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;  
+}
+
+.novinky{ text-align: center;
+    width: 200px;
+    height: 150px;
+    border: medium solid rgb(220, 20, 60);
+    position: absolute;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: xx-large;
+    left: 825px;
+    top: 350px;
+    padding-top: 50px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;  
+}
+
+.novevydani{ text-align: center;
+    width: 200px;
+    height: 150px;
+    border: medium solid rgb(220, 20, 60);
+    position: absolute;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: xx-large;
+    left: 1200px;
+    top: 350px;
+    padding-top: 50px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;  
+}
+
+.pozadivideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1920px;
+    height: 100%;
+    opacity: 70%;
+}
+
+.aotypozadivideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1920px;
+    height: 100%;
+    opacity: 50%;
+}
+.izaya {position: absolute;
+        left: 12%;
+        top: 20%;
+        border: crimson groove medium;
+}
+    .izayaieathumans{
+        position: absolute;
+        left: 12%;
+        top: 18%;
+    }
+
+.carti {position: absolute;
+        top: 20%;
+        right: 12%;
+        border: crimson groove medium;
+}
+
+    .cartidvactyri{ 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+        position: absolute;
+        top: 18%;
+        right: 12%;
+    }
+
+.summrs {position: absolute;
+    left: 12%;
+    top: 60%;
+    border: crimson groove medium;
+}
+    .summrscheckmeout{
+        position: absolute;
+        left: 12%;
+        top: 58%;
+    }
+
+.autumn {position: absolute;
+    top: 60%;
+    right: 12%;
+    border: crimson groove medium;
+}
+
+    .scrautumn{        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+        position: absolute;
+        top: 58%;
+        right: 12%;
+    }
+
+.uvoddole { 
+        position: absolute;
+        font-size: xx-large;
+        font-family: "nightmachine";
+        color: crimson;
+        left: 47.5%;
+        bottom: 0%;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    
+    .uvoddole:hover {
+        text-decoration: none;
+        border-width: initial;
+        transform: initial;
+    }
+    
+    .a:not(.active):hover {
+        position: absolute;
+        font-size: xx-large;
+        font-family: "nightmachine";
+        color: crimson;
+        left: 46.5%;
+        bottom: 0%;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .typewriter-container {
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: 'Courier New', monospace;
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        bottom: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #typewriter-text {
+        display: inline-block;
+        width: 100%;
+        opacity: 1;
+        animation: typewriter 6s linear infinite; 
+    }
+
+    @keyframes typewriter {
+        0%, 50%, 100% {
+            width: 100%;
+        }
+        25%, 75% {
+            width: 0;
+        }
+    }
+
+    .albumrokuhlasovani {
+        color: white;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .album-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 30px; 
+        margin-top: 30px;
+    }
+
+    .album {
+        text-align: center;
+        width: 235px; 
+        margin: 0 40px; 
+        position: relative;
+    }
+
+    .album img {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .album p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        color: crimson;
+        margin-top: 5px;
+    }
+
+    #vote-button {
+        border: groove white thin;
+        background-color: crimson;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 20px auto; 
+        display: block;
+    }
+
+    .kennovinkybody {
+        color: white;
+        background-color: black;
+        font-family: 'Arial', sans-serif;
+        padding: 20px;
+    }
+
+    .rapper-info {
+        max-width: calc(100% - 400px); 
+        float: left;
+        margin-bottom: 20px; 
+    }
+
+    .kennovinkyobrazek {
+        max-width: 100%;
+        max-height: 350px;
+        margin-top: 70px;
+        border: 2px solid crimson;
+        float: right;
+        border-radius: 8px;
+        position: absolute;
+        top: 140px;
+        right: 60px;
+    }
+
+    .kennovinkynadpis {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: crimson;
+    }
+
+        .kencarsontextnovinky {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    .kennovinkyvydani{
+        color: crimson;
+    }
+
+        .vedoucisingl{
+            margin-bottom: 20px;
+        }
+    .kennovinkycover{
+        color: crimson;
+    }
+        .obalalba{ 
+            margin-bottom: 20px;
+        }
+
+    .kennovinkyreviews{
+        color: crimson;
+    }
+
+        .hodnoceniagc{
+            margin-bottom: 20px;
+        }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        border: 1px solid crimson;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: crimson;
+        color: white;
+    }
+
+    .rapper-details {
+        margin-top: 20px;
+        clear: both; 
+    }
+
+    .kennovinkyfeat {
+        font-size: 1.5em;
+        color: crimson;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    ul li::before {
+        content: "●"; /* Kruh jako symbol před každým názvem umělce */
+        color: crimson; /* Barva kruhu */
+        font-size: 1.2em; /* Velikost kruhu */
+        margin-right: 5px; /* Mezera mezi kruhem a textem */
+    }
+    
+    ul ul {
+        list-style: decimal;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 50px; /* Mezera mezi vnějším seznamem a vnořeným seznamem */
+    }
+    
+    ul ul li {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    
+    ul ul li::before {
+        content: ""; /* Prázdný obsah pro vnořený seznam */
+        margin-right: 0; /* Žádná mezera mezi kruhem a textem vnořeného seznamu */
+    }

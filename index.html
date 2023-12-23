@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zaverecnaprace.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Muzik</title>
+</head>
+<body>
+<h2 class="nadpis">MUZIK</h2>
+
+<a href="albumrokuhlasovani.html" class="aoty" target="_self">Album roku hlasování</a> 
+<a href="novinky.html" class="novinky" target="_self">Novinky</a>
+<a href="novevydani.html" class="novevydani" target="_self">Nové vydání</a>
+<div class="video">
+    <video autoplay loop muted class="pozadivideo">
+        <source src="webovky_pozadijo.mp4" type="video/mp4">
+    </video>
+</div>
+    
+<div class="ticker-wrapper">
+    <div class="textupdate">
+        <div class="typewriter-container">
+            <span id="typewriter-text"></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const textElement = document.getElementById("typewriter-text");
+    const texts = [
+        "Lucki neskutečně rychle roste... do šířky.",
+        "DDG vyhrožuje, že vydá hudbu!",
+        "Carti nás opět edguje novou hudbou.",
+        "Věděli jste, že Summrs vyhrál ocenění za nejskromnějšího rappera v roce 2022!",
+        "",
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentText = texts[index];
+        if (isDeleting) {
+            textElement.innerHTML = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            textElement.innerHTML = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentText.length + 1) {
+            isDeleting = true;
+            setTimeout(type, 1300); // Pause before starting to delete
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            index = (index + 1) % texts.length;
+            setTimeout(type, 500); // Pause before starting to type the next line
+        } else {
+            const speed = isDeleting ? 50 : 100; // Adjust the typing speed
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+</script>
+
+</body>
+</html>
